@@ -6,8 +6,8 @@ li.append("Python")
 print(len(li))
 
 print(li[0])
-print(li[5])
-print(li[2:5])
+print(li[-1])
+print(li[1:4])
 li.remove("Python")
 print(li)
 
