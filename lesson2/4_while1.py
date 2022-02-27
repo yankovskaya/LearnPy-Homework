@@ -8,10 +8,10 @@
 
 
 def hello_user():
-    while True:
-            user_say = input('Как дела?')
-            if user_say == 'Хорошо':
-                print('Ура!')
-                break
-
+    user_say = None
+    while user_say != 'Хорошо':
+        user_say = input('Как дела?')
+        if user_say == 'Хорошо':
+          print('Ура!')
+          break
 hello_user()

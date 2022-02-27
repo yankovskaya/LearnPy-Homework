@@ -12,19 +12,18 @@
 """
 
 
-def strings(str1, str2):
+def strings(first, second):
 
-    if type(str1) is not str or type(str2) is not str:
-       return 0
-    elif str1 == str2:
-     return 1
-    elif len(str1) > len(str2):
-        return 2
-    elif str2 == 'learn':
-        return 3
-    else:
-        return "Что-то пошло не так"
+    if not isinstance(first, str) or not isinstance(second, str):
+      return 0
+    if first == second:
+      return 1
+    if len(first) > len(second):
+      return 2
+    if second == 'learn':
+      return 3
 
+strings('meow', 'meow')
 
 strings(1, 2)
 

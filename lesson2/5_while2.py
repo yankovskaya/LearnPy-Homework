@@ -11,9 +11,10 @@
     
 """
 
-questions_and_answers = {"Как дела?": "Хорошо!", "Что делаешь?": "Программирую", "Что будешь делать завтра?": "Программировать!"}
+questions = {"Как дела?": "Хорошо!", "Что делаешь?": "Программирую", "Что будешь делать завтра?": "Программировать!"}
 
-def ask_user(users_question):
+def ask_user():
+    answer = questions.get('question')
     while True:
         users_question = input("Задай вопрос!")
         if users_question == "Как дела?":
@@ -25,4 +26,5 @@ def ask_user(users_question):
         else: 
             print("Задай другой вопрос!")
 
-ask_user(questions_and_answers)
+if __name__ == "__main__":
+    ask_user()

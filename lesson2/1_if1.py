@@ -10,20 +10,17 @@
 * Вывести содержимое переменной на экран
 """
 
-
-
 def users_age():
-    age = input('Сколько тебе лет?')
-    age = int(age)
+    age_q = (input('Сколько тебе лет?')) 
+    age = int(age_q)
     if 0 <= age <= 6:
         return 'Tебе пара в детский сад!'
-    elif 7 <= age <= 17:
+    if 7 <= age <= 17:
         return 'Ты ходишь в школу!'
-    elif 18 <= age <= 22: 
+    if 18 <= age <= 22: 
         return 'Ты ходишь в ВУЗ!'
-    else: 
+    if age >= 23:
         return 'Ты работаешь?'
-users_age()
 
-
-    
+if __name__ == '__main__':
+    print(users_age())
